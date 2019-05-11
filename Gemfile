@@ -29,7 +29,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'paperclip-ffmpeg', '~> 1.2'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
-
+gem 'animate-rails'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
