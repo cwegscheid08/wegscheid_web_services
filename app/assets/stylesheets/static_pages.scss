@@ -8,7 +8,7 @@
 	display: grid;
 	grid-template-areas:
 		"logo logo menu"
-		"info content content"
+		"content content content"
 		"footer footer footer";
 	grid-auto-rows: 1fr;
 	grid-auto-columns: 1fr;
@@ -48,7 +48,7 @@
 	grid-area: footer;
 	position: fixed;
 	color: white;
-	margin: 514px 0px 0px 71px;
+	margin: 550px 0px 0px 71px;
 	width: 311px;
 	height: 54px;
 	font-size: 30px;
@@ -68,7 +68,7 @@
 	color: white;
 	text-align: center;
 	justify-self: center;
-	margin: 50px 10px 0px 0px;
+	margin: 50px 10px 0px 435px;
 	width: 400px;
 	font-weight: 100;
 	font-size: 19px;
@@ -80,25 +80,36 @@
 .wireframes {
 	position: relative;
 	grid-area: content;
-	justify-self: center;
-	text-align: center;
 	margin: -164px 0px 0px 0px;
 	animation-delay: 2s;
 	animation-duration: 3s;
+	display: inline-flex;
 }
 
 .services_info {
 	position: relative;
 	color: white;
-	grid-area: info;
-	margin: -110px 0px 0px 51px;
-	width: 188px;
+	grid-area: content;
+	display: inline-flex;
+	margin: -68px 0px 0px 112px;
+	width: 144px;
 	font-weight: 100;
-	font-size: 19px;
+	font-size: 23px;
 	background-color: rgba(0, 0, 0, 0.35);
 	border-radius: 4px;
+	text-align: center;
+	height: 289px;
+	animation-delay: 2s;
+	animation-duration: 3s;
 }
 
+.wireframe_left {
+	margin: 0px -80px 0px 354px;
+}
+
+.wireframe_right {
+	margin-right: 10px;
+}
 
 
 /* CONTACT PAGE */
