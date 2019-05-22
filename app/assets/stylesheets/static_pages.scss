@@ -109,7 +109,6 @@
 	font-weight: 100;
 	font-size: 23px;
 	background-color: rgba(0, 0, 0, 0.5);
-	border-radius: 8px;
 	text-align: center;
 	height: 289px;
 	animation-delay: 2s;
@@ -147,7 +146,6 @@
 	font-size: 26px;
 	font-weight: 200;
 	background-color: rgba(0, 0, 0, 0.5);
-	border-radius: 9px;
 	animation-delay: 2s;
 	animation-duration: 3s;
 	align-self: center;
@@ -175,8 +173,6 @@
 .dropdown {
   grid-area: menu;
   position: relative;
-  display: inline-block;
-  margin: 48px 0px 0px 209px;
 }
 
 .dropdown-content {
