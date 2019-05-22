@@ -23,13 +23,17 @@ default: &default
 
 development:
   <<: *default
-  # database: myapp_development
+  database: myapp_development
 
+  # adapter: postgresql
+  # encoding: unicode
+  # pool: 5
+  
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
   # the same name as the operating system user that initialized the database.
-  #username: myapp
+  username: myapp
 
   # The password associated with the postgres role (username).
   #password:
@@ -41,7 +45,7 @@ development:
 
   # The TCP port the server listens on. Defaults to 5432.
   # If your server runs on a different port number, change accordingly.
-  # port: 3000
+  port: 3000
 
   # Schema search path. The server defaults to $user,public
   #schema_search_path: myapp,sharedapp,public
