@@ -10,7 +10,7 @@
 		"logo logo menu"
 		"content content content"
 		"footer footer footer";
-	grid-auto-rows: 1fr 3fr 1fr;
+	grid-auto-rows: 1fr 9fr 1fr;
 	grid-auto-columns: 1fr 3fr 1fr;
 }
 
@@ -40,7 +40,7 @@
 }
 
 .filter {
-	background-color: rgb(10, 32, 68);
+	background-image: linear-gradient(to bottom right, #00b4ff, black);
 	position: fixed;
 	right: 0;
 	bottom: 0;
@@ -77,9 +77,8 @@
 	grid-area: content;
 	position: relative;
 	color: white;
-	text-align: center;
+	text-align: right;
 	justify-self: center;
-	margin: 50px 10px 0px 435px;
 	width: 400px;
 	font-weight: 100;
 	font-size: 19px;
