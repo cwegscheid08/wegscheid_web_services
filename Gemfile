@@ -6,8 +6,8 @@ ruby '2.5.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
 # Use sqlite3 as the database for Active Record
-# gem 'sqlite3'
-gem 'pg', '~> 1.1.4'
+gem 'sqlite3'
+gem 'pg'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
@@ -29,11 +29,11 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 # gem 'paperclip-ffmpeg', '~> 1.2'
 # Use ActiveStorage variant
-# gem 'mini_magick', '~> 4.8'
+gem 'mini_magick', '~> 4.8'
 gem 'animate-rails'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-gem 'fog-aws'
+# gem 'fog-aws'
 gem 'sitemap_generator'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
