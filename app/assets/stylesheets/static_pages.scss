@@ -28,7 +28,7 @@
 	position: fixed;
 	background-color: rgba(84, 85, 82, 0);
 	border-radius: 0px;
-	height: 90px;
+	height: 110px;
 	a img {
 		margin: -25px 0px 0px 11px;
 	}
@@ -49,15 +49,15 @@
 	opacity: 0.2;
 }
 
-.footer {
-	grid-area: footer;
-	position: relative;
+.slogan {
+	grid-area: logo;
+	position: fixed;
 	color: white;
-	margin: 0px 0px 0px 1%;
+	margin: 95px 0px 0px 3px;
 	width: 311px;
 	height: 54px;
-	font-size: 30px;
-	font-weight: 300;
+	font-size: 20px;
+	font-weight: 100;
 	align-self: end;
 	/* box-shadow: 0px 10px 8px -8px whitesmoke; */
 	p {
@@ -67,10 +67,13 @@
 	}
 }
 
-/* .footer:hover {
-	background-color: rgba(255, 255, 255, 0.35);
-	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-} */
+.footer {
+	grid-area: footer;
+	background-color: rgba(0, 0, 0, 0);
+	position: relative;
+	max-height: 400px;
+	margin-top: 10px;
+}
 
 /* ABOUT PAGE */
 
@@ -78,12 +81,14 @@
 	grid-area: content;
 	position: relative;
 	color: white;
-	text-align: right;
+	text-align: center;
 	justify-self: center;
 	width: 350px;
 	font-weight: 100;
 	font-size: 19px;
 	align-self: center;
+	margin-left: 100px;
+	background-color: rgba(0, 0, 0, 0.5);
 }
 
 
@@ -174,17 +179,19 @@
 .dropdown {
   grid-area: menu;
   position: relative;
-  margin-left: -75px;
+  justify-self: end;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
   background-color: rgba(255,255,255,0.11);
-  min-width: 100px;
+  min-width: 117px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   max-width: 160px;
+  margin: 0px 0px 0px -50px;
+  text-align: end;
 }
 
 .dropdown-content a {
@@ -209,7 +216,7 @@
 	background-color: rgba(255, 255, 255, 0.1);
 	min-width: 165px;
 	color: white;
-	margin: -44px 0px 0px 100px;
+	margin: -44px 0px 0px -165px;
 	z-index: 1;
 	box-shadow: 0px 8px 16px 8px rgba(0, 0, 0, 0.2);
 	position: absolute;
