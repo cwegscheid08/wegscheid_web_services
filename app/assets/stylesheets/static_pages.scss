@@ -10,7 +10,7 @@
 		"logo logo menu"
 		"content content content"
 		"footer footer footer";
-	grid-auto-rows: 1fr 6fr 1fr;
+	grid-auto-rows: 1fr 6fr 2.3fr;
 	grid-auto-columns: 1fr 3fr 1fr;
 }
 
@@ -24,11 +24,12 @@
 
 .logo {
 	grid-area: logo;
-	margin: 3% 0px 0px 1%;
+	margin: 25px 0px 0px 8px;
 	position: fixed;
-	background-color: rgba(84, 85, 82, 0);
+	background-color: rgba(0, 0, 0, 0.4);
 	border-radius: 0px;
 	height: 110px;
+	z-index: 1;
 	a img {
 		margin: -25px 0px 0px 11px;
 	}
@@ -36,7 +37,7 @@
 
 .logo:hover {
 	background-color: rgba(255, 255, 255, 0.35);
-	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.8);
 }
 
 .filter {
@@ -53,27 +54,31 @@
 	grid-area: logo;
 	position: fixed;
 	color: white;
-	margin: 95px 0px 0px 3px;
+	margin: 90px 0px 0px 3px;
 	width: 311px;
 	height: 54px;
 	font-size: 20px;
 	font-weight: 100;
 	align-self: end;
-	/* box-shadow: 0px 10px 8px -8px whitesmoke; */
+	z-index: 1;
 	p {
 		margin: 8px 0px 0px 33px;
-		animation-delay: 2s;
-		animation-duration: 2s;
 	}
 }
 
 .footer {
 	grid-area: footer;
-	background-color: rgba(0, 0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.4);
 	position: relative;
 	max-height: 400px;
 	margin-top: 10px;
+	min-height: 169px;
+	min-width: 105%;
+	justify-self: center;
+	z-index: 1;
 }
+
+
 
 /* ABOUT PAGE */
 
@@ -87,8 +92,8 @@
 	font-weight: 100;
 	font-size: 19px;
 	align-self: center;
-	margin-left: 100px;
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.6);
+	z-index: 1;
 }
 
 
@@ -110,16 +115,18 @@
 	color: white;
 	grid-area: content;
 	display: inline-flex;
-	margin: 0px 0px 0px 8%;
+	margin: 95px 0px 0px 8%;
 	width: 170px;
 	font-weight: 100;
 	font-size: 23px;
-	background-color: rgba(0, 0, 0, 0.5);
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+	background-color: rgba(0, 0, 0, 0.4);
 	text-align: center;
 	height: 289px;
 	animation-delay: 2s;
 	animation-duration: 3s;
 	align-self: center;
+	z-index: 1;
 	p {
 		width: 144px;
 		margin-left: 14px;
@@ -127,17 +134,24 @@
 }
 
 .wireframe_left {
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
 	margin: 0px 25px 0px 0px;
+	z-index: 1;
 }
 
-.wireframe_left:hover {
-	background-color: rgba(255, 255, 255, 0.35);
+.wireframe_left img:hover {
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.8);
 }
 
 .wireframe_right {
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
 	margin: 0px 0px 0px 25px;
+	z-index: 1;
 }
 
+.wireframe_right img:hover {
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.8);
+}
 
 /* CONTACT PAGE */
 
@@ -151,10 +165,11 @@
 	margin: 58px 0px 0px 0px;
 	font-size: 26px;
 	font-weight: 200;
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.6);
 	animation-delay: 2s;
 	animation-duration: 3s;
 	align-self: center;
+	z-index: 1;
 	ul li {
 		list-style: none;
 	}
@@ -179,13 +194,16 @@
 .dropdown {
   grid-area: menu;
   position: relative;
-  justify-self: end;
+  justify-self: center;
+  z-index: 1;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: rgba(255,255,255,0.11);
+  background-color: rgba(255,255,255,0.25);
   min-width: 117px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -203,20 +221,20 @@
 }
 
 .dropdown-content a:hover {
-	background-color: rgba(0, 0, 0, 0.35);
+	background-color: rgba(0, 0, 0, 0.4);
 	color: white;	
 }
 
 .dropdown:hover .dropdown-content {display: block;}
 
-.dropdown:hover .dropbtn {background-color: rgba(255, 255, 255, 0.25)}
+.dropdown:hover .dropbtn {background-color: rgba(255, 255, 255, 0.35);}
 
 .services_tab .services_dropdown {
 	display: none;
-	background-color: rgba(255, 255, 255, 0.1);
+	background-color: rgba(255, 255, 255, 0.25);
 	min-width: 165px;
 	color: white;
-	margin: -44px 0px 0px -165px;
+	margin: -44px 0px 0px -157px;
 	z-index: 1;
 	box-shadow: 0px 8px 16px 8px rgba(0, 0, 0, 0.2);
 	position: absolute;
@@ -224,7 +242,7 @@
 
 .services_tab:hover .services_dropdown {
 	display: block;
-	background-color: rgba(255, 255, 255, 0.1);
+	background-color: rgba(255, 255, 255, 0.25);
 }
 
 .services_dropdown a:hover {
@@ -254,3 +272,6 @@
 	}
 }
 
+.shadow {
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);	
+}
