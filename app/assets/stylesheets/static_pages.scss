@@ -2,15 +2,17 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
 .container {
 	width: auto;
 	height: 100%;
 	display: grid;
+	font-family: 'Raleway', 'sans-serif';
 	grid-template-areas:
 		"logo logo menu"
 		"content content content"
 		"footer footer footer";
-	grid-auto-rows: 1fr 6fr 2.3fr;
+	grid-auto-rows: 1fr 7fr 2.5fr;
 	grid-auto-columns: 1fr 3fr 1fr;
 }
 
@@ -61,23 +63,72 @@
 	font-weight: 100;
 	align-self: end;
 	z-index: 1;
+
 	p {
 		margin: 8px 0px 0px 33px;
+		animation-delay: 1s;
 	}
 }
 
-.footer {
+.footer-text {
+	grid-area: footer;
+	justify-self: end;
+	z-index: 1;
+	font-size: 18px;
+	font-weight: 200;
+	margin: 10px 75px 0px 0px;
+	color: white;
+	animation-delay: 1s;
+	text-align: end;
+	ul {
+		list-style: none;
+		font-size: 16px;
+		font-weight: 100;
+	}
+}
+
+.footer-social-media {
+	grid-area: footer;
+	justify-self: center;
+	margin-top: 10px;
+	z-index: 1;
+	font-size: 18px;
+	font-weight: 200;
+	color: white;
+	animation-delay: 1s;
+	text-align: center;
+}
+
+.footer-email {
+	grid-area: footer;
+	justify-self: start;
+	z-index: 1;
+	font-size: 18px;
+	font-weight: 200;
+	margin: 10px 0px 0px 75px;
+	color: white;
+	animation-delay: 1s;
+	text-align: start;
+	button {
+		color: black;
+	}
+}
+
+.footer-background {
 	grid-area: footer;
 	background-color: rgba(0, 0, 0, 0.4);
 	position: relative;
 	max-height: 400px;
 	margin-top: 10px;
-	min-height: 169px;
 	min-width: 105%;
 	justify-self: center;
+	overflow: hidden;
 	z-index: 1;
 }
 
+.social-icons a img {
+	opacity: 0.8;
+}
 
 
 /* ABOUT PAGE */
@@ -92,12 +143,110 @@
 	font-weight: 100;
 	font-size: 19px;
 	align-self: center;
-	background-color: rgba(0, 0, 0, 0.6);
+	background-color: rgba(0, 0, 0, 0.4);
 	z-index: 1;
 }
 
 
 /* SERVICES PAGE */
+
+.packages {
+	margin-left: 20px;
+	color: white;
+	grid-area: content;
+	position: relative;
+	align-self: start;
+	justify-self: start;
+	font-weight: 300;
+	text-align: end;
+	font-size: 22px;
+	background-color: rgba(0, 0, 0, 0.4);
+	min-width: 200px;
+	margin: 95px 0px 0px 8px;
+	z-index: 1;
+	// display: inline-flex;
+}
+
+.packages:hover {
+	background-color: rgba(0, 0, 0, 0.6);
+	text-align: start;
+}
+
+.packages a {
+	color: white;
+}
+
+.standard_dropdown {
+	display: none;
+	color: white;
+	position: relative;	
+	text-align: start;
+	font-size: 16px;
+	font-weight: 300;
+	ul {
+		list-style: none;
+	}
+}
+
+.standard_package:hover {
+	.standard_dropdown {
+		display: inline-flex;
+		color: white;
+		margin: 0px 0px 0px 305px;
+	}
+}
+
+.deluxe_dropdown {
+	display: none;
+	color: white;
+	position: relative;	
+	text-align: start;
+	font-size: 16px;
+	font-weight: 300;
+	ul {
+		list-style: none;
+	}
+}
+
+.deluxe_package:hover {
+	.deluxe_dropdown {
+		display: inline-flex;
+		color: white;
+		margin: 0px 0px 0px 305px;
+	}
+}
+
+.business_pro_dropdown {
+	display: none;
+	color: white;
+	position: relative;	
+	text-align: start;
+	font-size: 16px;
+	font-weight: 300;
+	ul {
+		list-style: none;
+	}
+}
+
+.business_pro_package:hover {
+	.business_pro_dropdown {
+		display: inline-flex;
+		color: white;
+		margin: 0px 0px 0px 305px;
+	}
+}
+
+.standard_package {
+	animation-delay: 1s;
+}
+
+.deluxe_package {
+	animation-delay: 1s;
+}
+
+.business_pro_package {
+	animation-delay: 1s;
+}
 
 .wireframes {
 	position: relative;
@@ -115,22 +264,31 @@
 	color: white;
 	grid-area: content;
 	display: inline-flex;
-	margin: 95px 0px 0px 8%;
+	// margin: 0px 8% 0px 0px;
 	width: 170px;
 	font-weight: 100;
 	font-size: 23px;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
-	background-color: rgba(0, 0, 0, 0.4);
 	text-align: center;
-	height: 289px;
-	animation-delay: 2s;
-	animation-duration: 3s;
+	height: 320px;
+	animation-delay: 1s;
+	// animation-duration: 3s;
 	align-self: center;
 	z-index: 1;
+	justify-self: end;
 	p {
 		width: 144px;
 		margin-left: 14px;
 	}
+}
+
+.services_info_background {
+	grid-area: content;
+	position: relative;
+	justify-self: end;
+	align-self: center;
+	margin: 0px 8% 0px 0px;
+	background-color: rgba(0, 0, 0, 0.4);
+	z-index: 1;
 }
 
 .wireframe_left {
@@ -165,7 +323,7 @@
 	margin: 58px 0px 0px 0px;
 	font-size: 26px;
 	font-weight: 200;
-	background-color: rgba(0, 0, 0, 0.6);
+	background-color: rgba(0, 0, 0, 0.4);
 	animation-delay: 2s;
 	animation-duration: 3s;
 	align-self: center;
@@ -204,7 +362,7 @@
   display: none;
   position: absolute;
   background-color: rgba(255,255,255,0.25);
-  min-width: 117px;
+  min-width: 120px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   max-width: 160px;
@@ -234,7 +392,7 @@
 	background-color: rgba(255, 255, 255, 0.25);
 	min-width: 165px;
 	color: white;
-	margin: -44px 0px 0px -157px;
+	margin: -44px 0px 0px -165px;
 	z-index: 1;
 	box-shadow: 0px 8px 16px 8px rgba(0, 0, 0, 0.2);
 	position: absolute;
@@ -271,6 +429,9 @@
 		animation-duration: 3s;
 	}
 }
+
+
+/* FORM ADDITIONS */
 
 .shadow {
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);	

@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   get '/services', to: 'static_pages#services'
   get '/contact', to: 'static_pages#contact'
   get '/maintenance', to: 'static_pages#maintenance'
+  get '/sample_gym', to: 'static_pages#sample_gym'
+  resources :members
 end
