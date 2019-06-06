@@ -1,6 +1,6 @@
 <% provide(:title, "Show #{@member.name}") %>
 
 <div class="show-member">
-	<%= "#{@member.name}" %><br>
+	<%= "#{@member.name.downcase.capitalize}" %><br>
 	<%= "#{@member.email}" %><br>
 </div>

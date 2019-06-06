@@ -5,7 +5,8 @@
 
 h1 {
 	grid-area: content;
-	margin: 75px 0px 0px 20px;
+	justify-self: center;
+	// margin: 75px 0px 0px 20px;
 }
 
 .new_member {
@@ -18,6 +19,7 @@ h1 {
 	justify-self: center;
 	text-align: center;
 	max-width: 175px;
+	z-index: 1;
 }
 
 
@@ -29,4 +31,30 @@ h1 {
 	justify-self: center;
 	display: block;
 	text-align: center;
+	font-size: 24px;
+	font-weight: 100;
+}
+
+
+/* EDIT */
+
+.edit-form {
+	grid-area: content;
+	justify-self: center;
+	align-self: center;
+	text-align: end;
+	font-size: 16px;
+	z-index: 1;
+}
+
+
+/* INDEX */
+
+.member-index {
+	grid-area: content;
+	justify-self: center;
+	align-self: center;
+	text-align: center;
+	font-size: 16px;
+	z-index: 1;
 }

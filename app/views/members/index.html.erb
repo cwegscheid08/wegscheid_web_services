@@ -1,3 +1,8 @@
 <% provide(:title, 'Index') %>
 
-<%= puts "#{@member.name}" %>
+<div class="member-index">
+	<% @members.each do |member| %>
+		<%= "#{member.name}" %><br>
+		<%= "#{member.email}" %><br><br>
+	<% end %>
+</div>

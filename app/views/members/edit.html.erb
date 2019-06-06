@@ -1,0 +1,15 @@
+<% provide(:title, "Edit #{@member.name}") %>
+
+<h1>Edit <%= "#{@member.name}" %></h1>
+
+<div class="edit-form">
+	<%= form_for(@member, :method => 'Patch') do |f| %>
+		<%= f.label :name %>
+		<%= f.text_field :name %><br>
+
+		<%= f.label :email %>
+		<%= f.text_field :email %><br>
+
+		<%= f.submit "Edit my account", class: "btn btn-primary" %>
+	<% end %>
+</div>
