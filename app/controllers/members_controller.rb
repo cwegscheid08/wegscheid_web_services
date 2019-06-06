@@ -7,10 +7,20 @@ class MembersController < ApplicationController
 
 	def create
 		@member = Member.create(member_params)
+		if @member != false
+			render 'index'
+		else
+			render 'new'
+		end
 	end
 
 	def index
-		@member = Member.all
+		@members = Member.all
+	end
+
+	def show
+		@member = Member.find(params[:id])
+
 	end
 
 
@@ -18,6 +28,6 @@ class MembersController < ApplicationController
 	private
 
 	def member_params
-		params.require(:member).permite(:name, :email, :password, :password_confirmation)
+		params.require(:member).permit(:name, :email, :password, :password_confirmation)
 	end
 end
