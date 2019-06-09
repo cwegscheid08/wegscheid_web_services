@@ -21,7 +21,7 @@ body {
 		"logo logo menu"
 		"content content content"
 		"footer footer footer";
-	grid-auto-rows: 1fr 3fr 1fr;
+	grid-auto-rows: 1fr 5fr 1fr;
 	grid-auto-columns: 1fr 3fr 1fr;
 }
 
@@ -93,7 +93,7 @@ body {
 
 	background-color: rgba(0, 0, 0, 0.4);
 	position: relative;
-	max-height: 400px;
+	max-height: 100px;
 	margin-top: 10px;
 	min-width: 105%;
 	justify-self: center;
@@ -116,6 +116,9 @@ body {
 		list-style: none;
 		font-size: 16px;
 		font-weight: 100;
+	}
+	table {
+		text-align: center;
 	}
 }
 
@@ -188,14 +191,14 @@ body {
 	color: white;
 	grid-area: content;
 	position: relative;
-	align-self: start;
+	align-self: center;
 	justify-self: start;
 	font-weight: 300;
 	text-align: end;
 	font-size: 22px;
 	background-color: rgba(0, 0, 0, 0.4);
 	min-width: 200px;
-	margin: 95px 0px 0px 8px;
+	// margin: 4% 0px 0px 8px;
 	z-index: 1;
 	// display: inline-flex;
 }
@@ -401,7 +404,7 @@ body {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: rgba(255,255,255,0.25);
+  background-color: rgba(0,0,0,0.4);
   min-width: 120px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -419,17 +422,17 @@ body {
 }
 
 .dropdown-content a:hover {
-	background-color: rgba(0, 0, 0, 0.4);
+	background-color: rgba(255, 255, 255, 0.4);
 	color: white;	
 }
 
 .dropdown:hover .dropdown-content {display: block;}
 
-.dropdown:hover .dropbtn {background-color: rgba(255, 255, 255, 0.35);}
+.dropdown:hover .dropbtn {background-color: rgba(255, 255, 255, 0.4);}
 
 .services_tab .services_dropdown {
 	display: none;
-	background-color: rgba(255, 255, 255, 0.25);
+	background-color: rgba(0, 0, 0, 0.4);
 	min-width: 165px;
 	color: white;
 	margin: -44px 0px 0px -165px;
@@ -440,11 +443,11 @@ body {
 
 .services_tab:hover .services_dropdown {
 	display: block;
-	background-color: rgba(255, 255, 255, 0.25);
+	background-color: rgba(0, 0, 0, 0.4);
 }
 
 .services_dropdown a:hover {
-	background-color: rgba(0, 0, 0, 0.35);
+	background-color: rgba(255, 255, 255, 0.4);
 	color: white;
 }
 
