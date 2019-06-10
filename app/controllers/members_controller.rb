@@ -8,6 +8,7 @@ class MembersController < ApplicationController
 	def create
 		@member = Member.create(member_params)
 		if @member != false
+			log_in @member
 			flash[:success] = "Congrats #{@member.name}, you have created your account."
 			render 'show'
 		else

@@ -8,5 +8,6 @@ Rails.application.routes.draw do
   get '/contact', to: 'static_pages#contact'
   get '/maintenance', to: 'static_pages#maintenance'
   get '/sample_gym', to: 'static_pages#sample_gym'
+  get '/news', to: 'static_pages#news'
   resources :members
 end
