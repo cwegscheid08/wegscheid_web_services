@@ -18,4 +18,7 @@ class StaticPagesController < ApplicationController
 
 	def sample_gym
 	end
+
+	def news
+	end
 end
