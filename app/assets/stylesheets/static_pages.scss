@@ -167,6 +167,35 @@ body {
 }
 
 
+/* NEWS PAGE */
+
+.newsletter {
+	grid-area: content;
+	align-self: center;
+	justify-self: center;
+	z-index: 1;
+	display: flex;
+	//background-color: rgba(0, 0, 0, 0.4);
+
+}
+
+.hover-content .single-letter-1 {
+	display: none;
+}
+
+.newsletter .newsletter-1:hover .single-letter-1 {
+	display: flex;
+}
+
+.single-letter-2 {
+	display: none;
+}
+
+.single-letter-3 {
+	display: none;
+}
+
+
 /* ABOUT PAGE */
 
 .about_info {
