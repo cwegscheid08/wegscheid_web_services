@@ -2,7 +2,7 @@
 <h1>Sign up</h1>
 
 <div class="signup-form">
-	<%= form_for(@member, :method => 'post') do |f| %>
+	<%= form_for(@member, method: => 'post') do |f| %>
 		<%= f.label :name %>
 		<%= f.text_field :name %>
 

@@ -3,7 +3,9 @@
 </div>
 
 <div class="slogan">
-  <p class="animated fadeIn"><i>Build your presence.</i></p>
+  <i>
+    <p id="period" class="animated fadeIn" onclick="sayHello()">Build your presence.</p>
+  </i>
 </div>
 
 <div class="dropdown">
@@ -33,12 +35,12 @@
     <a href="/news">News</a>
     <a href="/contact">Contact</a>
 
-    <% if logged_in? %>
+    <!-- <% if logged_in? %>
       <%= link_to "My account", current_member, method: :get %>
       <%= link_to "Log out", logout_path, method: :delete %>
     <% else %>
       <a href="/login">Log In</a>
-    <% end %>
+    <% end %> -->
 
   </div>
 </div>
