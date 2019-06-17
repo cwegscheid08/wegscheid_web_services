@@ -38,7 +38,7 @@ body {
 	grid-area: logo;
 	margin: 25px 0px 0px 8px;
 	position: fixed;
-	background-color: rgba(0, 0, 0, 0.4);
+	background-color: rgba(0, 0, 0, 0.6);
 	border-radius: 0px;
 	height: 110px;
 	z-index: 1;
@@ -91,7 +91,7 @@ body {
 	grid-auto-rows: 1fr;
 	grid-auto-columns: 1fr 1fr 1fr;
 
-	background-color: rgba(0, 0, 0, 0.4);
+	background-color: rgba(0, 0, 0, 0.6);
 	position: relative;
 	max-height: 100px;
 	margin-top: 10px;
@@ -149,13 +149,13 @@ body {
 	text-align: start;
 	input {
 		color: white;
-		background-color: rgba(255, 255, 255, 0.4);
+		background-color: rgba(255, 255, 255, 0.6);
 	}
 }
 
 /*.footer-background {
 	grid-area: footer;
-	background-color: rgba(0, 0, 0, 0.4);
+	background-color: rgba(0, 0, 0, 0.6);
 	position: relative;
 	max-height: 400px;
 	margin-top: 10px;
@@ -171,6 +171,8 @@ body {
 
 
 /* NEWS PAGE */
+
+
 
 .newsletter {
 	grid-area: content;
@@ -238,11 +240,12 @@ body {
 	color: white;
 	text-align: center;
 	justify-self: center;
-	width: 500px;
+	width: 475px;
 	font-weight: 100;
 	font-size: 19px;
 	align-self: center;
-	//background-color: rgba(0, 0, 0, 0.4);
+	//background-color: rgba(0, 0, 0, 0.6);
+	overflow: auto;
 	z-index: 1;
 }
 
@@ -269,7 +272,7 @@ body {
 	font-weight: 100;
 	font-size: 19px;
 	align-self: center;
-	background-color: rgba(0, 0, 0, 0.4);
+	background-color: rgba(0, 0, 0, 0.6);
 	z-index: 1;
 }
 
@@ -278,6 +281,9 @@ body {
 	align-self: center;
 	justify-self: center;
 	display: block;
+	background-color: rgba(0,0,0,0.6);
+	height: 160px;
+	margin: -10px 0px 0px 0px;
 	z-index: 1;
 }
 
@@ -299,7 +305,7 @@ body {
 	font-weight: 300;
 	text-align: end;
 	font-size: 22px;
-	background-color: rgba(0, 0, 0, 0.4);
+	background-color: rgba(0, 0, 0, 0.6);
 	min-width: 200px;
 	// margin: 4% 0px 0px 8px;
 	z-index: 1;
@@ -393,6 +399,7 @@ body {
 	animation-delay: 2s;
 	animation-duration: 3s;
 	display: none;
+	margin-right: 25px;
 	align-self: center;
 	justify-self: center;
 }
@@ -432,7 +439,7 @@ body {
 	justify-self: end;
 	align-self: center;
 	margin: 0px 8% 0px 0px;
-	background-color: rgba(0, 0, 0, 0.4);
+	background-color: rgba(0, 0, 0, 0.6);
 	z-index: 1;
 }
 
@@ -468,7 +475,7 @@ body {
 	margin: 58px 0px 0px 0px;
 	font-size: 26px;
 	font-weight: 200;
-	background-color: rgba(0, 0, 0, 0.4);
+	background-color: rgba(0, 0, 0, 0.6);
 	animation-delay: 2s;
 	animation-duration: 3s;
 	align-self: center;
@@ -502,14 +509,14 @@ body {
   justify-self: center;
   z-index: 1;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.6);
   max-height: 70px;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0,0,0,0.6);
   min-width: 120px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -527,17 +534,17 @@ body {
 }
 
 .dropdown-content a:hover {
-	background-color: rgba(255, 255, 255, 0.4);
+	background-color: rgba(255, 255, 255, 0.6);
 	color: white;	
 }
 
 .dropdown:hover .dropdown-content {display: block;}
 
-.dropdown:hover .dropbtn {background-color: rgba(255, 255, 255, 0.4);}
+.dropdown:hover .dropbtn {background-color: rgba(255, 255, 255, 0.6);}
 
 .services_tab .services_dropdown {
 	display: none;
-	background-color: rgba(0, 0, 0, 0.4);
+	background-color: rgba(0, 0, 0, 0.6);
 	min-width: 165px;
 	color: white;
 	margin: -44px 0px 0px -165px;
@@ -548,11 +555,11 @@ body {
 
 .services_tab:hover .services_dropdown {
 	display: block;
-	background-color: rgba(0, 0, 0, 0.4);
+	background-color: rgba(0, 0, 0, 0.6);
 }
 
 .services_dropdown a:hover {
-	background-color: rgba(255, 255, 255, 0.4);
+	background-color: rgba(255, 255, 255, 0.6);
 	color: white;
 }
 
@@ -582,9 +589,59 @@ body {
 /* FORM ADDITIONS */
 
 .shadow {
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);	
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.6);	
 }
 
 .shadow-double {
 	box-shadow: 0px 16px 32px 0px rgba(0,0,0,0.8);
 }
+
+
+
+@media screen and (max-width: 600px) {
+	img {
+		max-width: 300px;
+		max-height: 400px;
+	}
+
+	.newsletter {
+		display: block;
+		margin: 30px;
+		.newsletter-1 .single-letter-1 {
+			margin: 150px 0px 0px -250px;
+		}
+		.newsletter-2 .single-letter-2 {
+			margin: -50px 0px 0px -250px;
+		}
+		.newsletter-3 .single-letter-3 {
+			margin: -150px 0px 0px -250px;
+		}
+	}
+
+	.packages {
+		justify-self: start;
+		align-self: start;
+		margin: 70px 0px 0px 9px;
+		text-align: start;
+		img {
+			max-width: 325px;
+			max-height: 225px;
+		}
+		.wireframe_left {
+			margin: 30px 0px 20px 25px;
+		}
+		.wireframe_right {
+			margin: 0px 0px 30px 25px;
+		}
+	}
+	.services_info_background {
+		justify-self: start;
+		align-self: end;
+		margin: 0px 0px 40px 9px;
+	}
+	
+
+}
+
+
+
