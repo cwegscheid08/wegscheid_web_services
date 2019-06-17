@@ -340,6 +340,11 @@ body {
 	}
 }
 
+.standard_package, .deluxe_package, .business_pro_package {
+	z-index: 1;
+}
+
+
 .deluxe_dropdown {
 	display: none;
 	color: white;
@@ -674,8 +679,8 @@ body {
 	.footer-email {
 		input {
 			max-width: 75px;
-			max-height: 30px;
-			font-size: 14px;
+			max-height: 20px;
+			font-size: 12px;
 	}
 }
 
@@ -685,6 +690,10 @@ body {
 			margin-left: 20px;
 			font-size: 14px;
 		}
+	}
+
+	.filter {
+		z-index: 0;
 	}
 }
 
