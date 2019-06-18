@@ -12,6 +12,19 @@ body {
 	width: auto;
 }
 
+.button {
+	border-radius: 4px;
+	background-color: rgba(174,203,255,0.2);
+	font-size: 16px;
+	font-weight: 300;
+	border: white solid 1px;
+	color: white;
+}
+
+.button:hover {
+	background-color: rgba(174,203,255,0.8);
+}
+
 .container {
 	width: auto;
 	height: 100%;
@@ -299,6 +312,9 @@ body {
 	height: 160px;
 	margin: -10px 0px 0px 0px;
 	z-index: 1;
+	button {
+		margin-top: 5px;
+	}
 }
 
 .maintenance_form form input {
@@ -623,6 +639,7 @@ body {
 
 
 @media screen and (max-width: 600px) {
+
 	.slogan {
 		font-size: 20px;
 	}
