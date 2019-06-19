@@ -13,12 +13,12 @@ body {
 }
 
 .blur {
-	-webkit-backdrop-filter: blur(4px);
-	backdrop-filter: blur(4px);
+	-webkit-backdrop-filter: blur(8px);
+	backdrop-filter: blur(8px);
 	height: 100%;
 	width: 100%;
 	position: absolute;
-	background-color: rgba(0, 0, 0, 0.6);
+	background-color: rgba(0, 0, 0, 0.25);
 	z-index: 0;
 }
 
@@ -111,10 +111,10 @@ body {
 	font-weight: 100;
 	align-self: end;
 	z-index: 1;
-
+	animation-delay: 1s;
 	p {
 		margin: 8px 0px 0px 33px;
-		animation-delay: 1s;
+		
 	}
 }
 
@@ -330,9 +330,9 @@ body {
 	font-size: 19px;
 	align-self: center;
 	//background-color: rgba(0, 0, 0, 0.6);
-	z-index: 1;
-	height: 115px;
-	margin-bottom: 10px;
+	z-index: 0;
+	height: 320px;
+	margin-bottom: -198px;
 	padding-top: 20px;
 }
 
@@ -344,7 +344,7 @@ body {
 	//background-color: rgba(0,0,0,0.6);
 	height: 200px;
 	margin: -10px 0px 0px 0px;
-	z-index: 1;
+	z-index: 2;
 	max-width: 350px;
 	.button {
 		margin-top: 20px;
@@ -546,7 +546,7 @@ body {
 	margin: 58px 0px 0px 0px;
 	font-size: 26px;
 	font-weight: 200;
-	background-color: rgba(0, 0, 0, 0.6);
+	//background-color: rgba(0, 0, 0, 0.6);
 	animation-delay: 2s;
 	animation-duration: 3s;
 	align-self: center;
@@ -582,7 +582,7 @@ body {
   justify-self: center;
   z-index: 1;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
-  background-color: rgba(0, 0, 0, 0.6);
+  //background-color: rgba(0, 0, 0, 0.6);
   max-height: 70px;
   max-width: 67px;
 }
@@ -619,7 +619,7 @@ body {
 
 .services_tab .services_dropdown {
 	display: none;
-	background-color: rgba(0, 0, 0, 0.6);
+	//background-color: rgba(0, 0, 0, 0.6);
 	min-width: 165px;
 	color: white;
 	margin: -44px 0px 0px -165px;
@@ -631,7 +631,7 @@ body {
 
 .services_tab:hover .services_dropdown {
 	display: block;
-	background-color: rgba(0, 0, 0, 0.6);
+	//background-color: rgba(0, 0, 0, 0.6);
 }
 
 .services_dropdown a:hover {
@@ -681,6 +681,34 @@ body {
 
 @media screen and (max-width: 600px) {
 
+	.dropdown {
+		margin: 0px 0px 0px 33px;
+		font-size: 12px;
+		//width: 45px;
+		.dropdown-content {
+			min-width: 104px;
+			margin: 0px 0px 0px -37px;
+			.services_tab {
+				.services_dropdown {
+					font-size: 11px;
+					//width: 100px;
+					//margin: 0px 0px 0px 0px;
+				}
+			}
+		}
+	}
+
+	/*.dropdown-content:hover {
+
+
+		.services_tab:hover {
+			.services_dropdown {
+				margin: 0px 0px 0px 0px;
+				position: relative;
+			}
+		}
+	}*/
+
 	.slogan {
 		font-size: 20px;
 	}
@@ -706,9 +734,9 @@ body {
 	.packages {
 		grid-area: content;
 		justify-self: start;
-		font-size: 18px;
+		font-size: 15px;
 		align-self: start;
-		margin: 85px 0px 0px 9px;
+		margin: 145px 0px 0px 9px;
 		text-align: start;
 		position: relative;
 		display: block;
