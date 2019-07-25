@@ -1,9 +1,19 @@
 <% provide(:title, 'About') %>
 
-<video playsinline autoplay muted id="background_video" class="animated fadeInUp">
+<% provide(:page_description, 'Learn more about how WWS was founded, our web development team, and our mission for our community and clients.') %>
+
+<video playsinline autoplay muted id="background_video" class="animated fadeIn">
 	<source src="/videos/big_bloom_1.mp4" type="video/mp4">
 </video>
 
-<div class="about_info animated fadeInRight">
-	<a href="https://www.wegscheidwebservices.com/assets/hello!-409c8e78237e39b663333b61baf58d04155e04729e4ff1b89911c9ed1090258d.png" ><%= image_tag('hello!.png', size: '475x650', alt: "Welcome Sheet", class: 'shadow-double') %></a>
+<div class="about_fill">
+	<div class="about_info animated fadeInRight">
+		<a href="https://www.wegscheidwebservices.com/assets/hello!-409c8e78237e39b663333b61baf58d04155e04729e4ff1b89911c9ed1090258d.png" rel="nofollow"><%= image_tag('hello!.png', size: '475x650', alt: "Welcome Sheet", class: 'shadow-double') %></a>
+	</div>
+
+	<div class="spacer"></div>
+
+	<div class="about_text blur">
+		<p>In the age of mass technological advancements, the consumer climate of today is in constant change. This rapid progress has forced small business owners, more so than ever before, to continuously adapt for recognition or put their operations at risk. Wegscheid Web Services LLC was founded in LaBelle, Florida by Christopher Wegscheid with the mission to design personalized, relevant web sites that preserve the unique qualities of each business without breaking the bank. You can contact us by email at <a href="mailto:contact@wegscheidwebservices.com">Contact@wegscheidwebservices.com</a> or call us at <a href="tel:863-673-6419">(863)-673-6419</a></p>
+	</div>
 </div>

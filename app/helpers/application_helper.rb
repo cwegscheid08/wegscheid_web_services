@@ -10,4 +10,15 @@ module ApplicationHelper
 		end
 	end
 
+
+	# RETURNS THE FULL PAGE META DESCRIPTION ON A PER-PAGE BASIS
+	def meta_description(description = '')
+		base_description = "Build your presence."
+		if description.empty?
+			base_description
+		else
+			description
+		end
+	end
+
 end

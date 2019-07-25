@@ -18,7 +18,7 @@ body {
 	height: 100%;
 	width: 100%;
 	position: absolute;
-	background-color: rgba(0, 0, 0, 0.25);
+	background-color: rgba(201, 201, 201, 0.35);
 	z-index: 0;
 }
 
@@ -74,7 +74,7 @@ body {
 	margin: 25px 0px 0px 8px;
 	position: fixed;
 	//background-color: rgba(0, 0, 0, 0.6);
-	border-radius: 0px;
+	border-radius: 5px;
 	height: 110px;
 	z-index: 1;
 	max-width: 240px;
@@ -91,12 +91,15 @@ body {
 
 .filter {
 	background-image: linear-gradient(to bottom right, #00b4ff, black);
+	//background-color: rgba(43, 124, 200, 0.3);
+	//-webkit-backdrop-filter: blur(5px);
+	//backdrop-filter: blur(5px);
 	position: fixed;
 	right: 0;
 	bottom: 0;
 	min-width: 100%;
 	min-height: 100%;
-	opacity: 0.2;
+	opacity: 0.6;
 	z-index: 0;
 }
 
@@ -132,7 +135,7 @@ body {
 	//background-color: rgba(0, 0, 0, 0.6);
 	position: relative;
 	max-height: 100px;
-	margin-top: 10px;
+	//margin-top: 10px;
 	min-width: 108%;
 	justify-self: center;
 	overflow: hidden;
@@ -140,6 +143,7 @@ body {
 	z-index: 1;
 	a {
 		color: rgba(174,203,255,1);
+		//color: #ff2200;
 	}
 }
 
@@ -290,6 +294,12 @@ body {
 
 /* ABOUT PAGE */
 
+.about_fill {
+	grid-area: content;
+	display: flex;
+	justify-self: center;
+}
+
 .about_info {
 	grid-area: content;
 	position: relative;
@@ -303,6 +313,27 @@ body {
 	//background-color: rgba(0, 0, 0, 0.6);
 	overflow: auto;
 	z-index: 1;
+}
+
+.about_text {
+	grid-area: content;
+	position: relative;
+	p {
+		color: white;
+	}
+	z-index: 1;
+	text-align: center;
+	justify-self: end;
+	align-self: center;
+	width: 440px;
+	height: 400px;
+	border-radius: 5px;
+	font-size: 20px;
+	margin-right: 20px;
+}
+
+.spacer {
+	width: 50px;
 }
 
 
@@ -369,6 +400,7 @@ body {
 	font-weight: 300;
 	text-align: center;
 	font-size: 22px;
+	border-radius: 5px;
 	//background-color: rgba(0, 0, 0, 0.6);
 	min-width: 200px;
 	z-index: 2;
@@ -390,6 +422,7 @@ body {
 	text-align: center;
 	font-size: 16px;
 	font-weight: 300;
+	border-radius: 5px;
 	ul {
 		list-style: none;
 	}
@@ -546,13 +579,14 @@ body {
 	margin: 58px 0px 0px 0px;
 	font-size: 26px;
 	font-weight: 200;
+	border-radius: 5px;
 	//background-color: rgba(0, 0, 0, 0.6);
 	animation-delay: 2s;
 	animation-duration: 3s;
 	align-self: center;
 	z-index: 1;
 	max-width: 460px;
-	max-height: 75px;
+	max-height: 112px;
 	ul li {
 		list-style: none;
 	}
@@ -560,7 +594,9 @@ body {
 		margin-left: -33px;
 	}
 	a {
-		color: rgba(174,203,255,1);
+		//color: rgba(174,203,255,1);
+		color: #ff2200;
+		font-weight: 500;
 	}
 }
 
@@ -585,6 +621,7 @@ body {
   //background-color: rgba(0, 0, 0, 0.6);
   max-height: 70px;
   max-width: 67px;
+  border-radius: 0px 0px 5px 5px;
 }
 
 .dropdown-content {
@@ -598,6 +635,7 @@ body {
   margin: -1px 0px 0px -53px;
   text-align: end;
   min-height: 220px;
+  border-radius: 5px 0px 5px 5px;
 }
 
 .dropdown-content a {
