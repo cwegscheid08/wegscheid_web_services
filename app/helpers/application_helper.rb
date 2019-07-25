@@ -21,4 +21,12 @@ module ApplicationHelper
 		end
 	end
 
+	def declare_canonical(url = '')
+		base_url = 'https://www.wegscheidwebservices.com/'
+		if url.empty?
+			base_url
+		else
+			base_url + url
+		end
+	end
 end
