@@ -4,32 +4,188 @@
 
 <% provide(:page, 'news') %>
 
-<video playsinline autoplay muted id="background_video" class="animated fadeIn">
+<!-- <video playsinline autoplay muted id="background_video" class="animated fadeIn">
 	<source src="/videos/news_clip.mp4" type="video/mp4">
-</video>
+</video> -->
 
-<div class="newsletter shadow">
-	<div class="newsletter-1">
-		<%= image_tag('news_1.png', size: '200x300', alt: 'newsletter_1') %>
 
-		<div class="single-letter-1 animated fadeIn">
-			<a href="http://www.wegscheidwebservices.com/assets/news_1-f6307e2097760358952f8d3a7e66a09c5e280617c7c0c85d6198d2f4a45926b8.png" ><%= image_tag('news_1.png', size: '400x550', alt: 'newsletter_1_large') %></a>
-		</div>	
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="newsletter">
+	<!-- Images used to open the lightbox -->
+	<div class="row">
+	  <div class="column">
+	  	<%= image_tag('thumbnails/august_newsletter_thumb_pg_1.jpg', onclick: 'openModal();currentSlide(1)', class: 'hover-shadow') %>
+	  </div>
+	  <div class="column">
+	    <%= image_tag('thumbnails/august_newsletter_thumb_pg_2.jpg', onclick: 'openModal();currentSlide(1)', class: 'hover-shadow') %>
+	  </div>
+	  <div class="column">
+	    <%= image_tag('thumbnails/august_newsletter_thumb_pg_3.jpg', onclick: 'openModal();currentSlide(1)', class: 'hover-shadow') %>
+	  </div>
+	  <div class="column">
+	    <%= image_tag('thumbnails/august_newsletter_thumb_pg_4.jpg', onclick: 'openModal();currentSlide(1)', class: 'hover-shadow') %>
+	  </div>
+	  	  <div class="column">
+	    <%= image_tag('thumbnails/august_newsletter_thumb_pg_5.jpg', onclick: 'openModal();currentSlide(1)', class: 'hover-shadow') %>
+	  </div>
+	  <div class="column">
+	    <%= image_tag('thumbnails/august_newsletter_thumb_pg_6.jpg', onclick: 'openModal();currentSlide(1)', class: 'hover-shadow') %>
+	  </div>
+	  <div class="column">
+	    <%= image_tag('thumbnails/august_newsletter_thumb_pg_7.jpg', onclick: 'openModal();currentSlide(1)', class: 'hover-shadow') %>
+	  </div>
 	</div>
 
-	<div class="newsletter-2">
-		<%= image_tag('news_2.png', size: '200x300', alt: 'newsletter_2') %>
 
-		<div class="single-letter-2 animated fadeIn">
-			<a href="http://www.wegscheidwebservices.com/assets/news_2-b61da88482b7b0ab83ce8721668f3867af0dbfad9003f58c0905b9a51f8d3f5d.png" ><%= image_tag('news_2.png', size: '400x550', alt: 'newsletter_2_large') %></a>
-		</div>
-	</div>
 
-	<div class="newsletter-3">
-		<%= image_tag('news_3.png', size: '200x300', alt: 'newsletter_3') %>
 
-		<div class="single-letter-3 animated fadeIn">
-			<a href="http://www.wegscheidwebservices.com/assets/news_3-db1a1d01f2b9b040845de0d11ec0ce7940115d1c7ca1e773b599d554fa74a919.png" ><%= image_tag('news_3.png', size: '400x550', alt: 'newsletter_3_large') %></a>
-		</div>
+	<!-- The Modal/Lightbox -->
+	<div id="myModal" class="modal">
+	  <span class="close cursor" onclick="closeModal()">&times;</span>
+	  <div class="modal-content">
+
+	    <div class="mySlides">
+	      <div class="numbertext">1 / 7</div>
+	      <%= image_tag('full/august_newsletter_full_pg_1.jpg', size: '50x75', style: 'width:100%;') %>
+	    </div>
+
+	    <div class="mySlides">
+	      <div class="numbertext">2 / 7</div>
+	      <%= image_tag('full/august_newsletter_full_pg_2.jpg', size: '50x75', style: 'width:100%;') %>
+	    </div>
+
+	    <div class="mySlides">
+	      <div class="numbertext">3 / 7</div>
+	      <%= image_tag('full/august_newsletter_full_pg_3.jpg', size: '50x75', style: 'width:100%;') %>
+	    </div>
+
+	    <div class="mySlides">
+	      <div class="numbertext">4 / 7</div>
+	      <%= image_tag('full/august_newsletter_full_pg_4.jpg', size: '50x75', style: 'width:100%;') %>
+	    </div>
+
+	    <div class="mySlides">
+	      <div class="numbertext">5 / 7</div>
+	      <%= image_tag('full/august_newsletter_full_pg_5.jpg', size: '50x75', style: 'width:100%;') %>
+	    </div>
+
+	    <div class="mySlides">
+	      <div class="numbertext">6 / 7</div>
+	      <%= image_tag('full/august_newsletter_full_pg_6.jpg', size: '50x75', style: 'width:100%;') %>
+	    </div>
+
+	    <div class="mySlides">
+	      <div class="numbertext">7 / 7</div>
+	      <%= image_tag('full/august_newsletter_full_pg_7.jpg', size: '50x75', style: 'width:100%;') %>
+	    </div>
+
+
+
+	    <!-- Next/previous controls -->
+	    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+	    <!-- Caption text -->
+	    <div class="caption-container">
+	      <p id="caption"></p>
+	    </div>
+
+	    <!-- Thumbnail image controls -->
+	    <div class="column">
+	      <%= image_tag('small/august_newsletter_small_pg_1.jpg', onclick: 'currentSlide(1)', alt: 'Nature', class: 'demo') %>
+	    </div>
+
+	    <div class="column">
+	      <%= image_tag('small/august_newsletter_small_pg_2.jpg', onclick: 'currentSlide(1)', alt: 'Nature', class: 'demo') %>
+	    </div>
+
+	    <div class="column">
+	      <%= image_tag('small/august_newsletter_small_pg_3.jpg', onclick: 'currentSlide(1)', alt: 'Nature', class: 'demo') %>
+	    </div>
+
+	    <div class="column">
+	      <%= image_tag('small/august_newsletter_small_pg_4.jpg', onclick: 'currentSlide(1)', alt: 'Nature', class: 'demo') %>
+	    </div>
+
+	    <div class="column">
+	      <%= image_tag('small/august_newsletter_small_pg_5.jpg', onclick: 'currentSlide(1)', alt: 'Nature', class: 'demo') %>
+	    </div>
+
+	    <div class="column">
+	      <%= image_tag('small/august_newsletter_small_pg_6.jpg', onclick: 'currentSlide(1)', alt: 'Nature', class: 'demo') %>
+	    </div>
+
+	    <div class="column">
+	      <%= image_tag('small/august_newsletter_small_pg_7.jpg', onclick: 'currentSlide(1)', alt: 'Nature', class: 'demo') %>
+	    </div>
+	  </div>
 	</div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- SCRIPT -->
+
+
+<script>
+// Open the Modal
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+// Close the Modal
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
