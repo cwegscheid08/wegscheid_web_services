@@ -1,0 +1,52 @@
+<% provide(:title, "Portfolio") %>
+
+<% provide(:page_description, 'Would you like to see some of the web sites we have built? Take a look at some of our work.') %>
+
+<% provide(:page, 'portfolio') %>
+
+<div class="portfolio-background"><%= image_tag('blue_letter_1.png') %></div>
+
+
+<div class="portfolio-title">
+	<h1>Portfolio</h1>
+
+
+	<h3>Check out some of our work.</h3>
+</div>
+
+
+<div class="portfolio shadow-double">
+
+	<div class="site-list">
+		<table>
+
+
+			<tr>
+				<td>
+					<%= image_tag('lori_shula_therapist.png', size: '600x350', alt: 'lori shula therapist site', class: 'shadow-double') %>
+				</td>
+				<td>
+					<h3>Lori Shula Therapist</h3>
+					<a href="https://www.lorishulatherapist.com">Click Here</a>
+				</td>
+			</tr>
+
+			<tr>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td>
+					<h3>Living Word Christian School</h3>
+					<a href="http://www.lwcsnfm.org/">Click Here</a>
+				</td>
+				<td>
+					<%= image_tag('living_word_christian_school_screenshot.png', size: '600x350', alt: 'living word christian school site', class: 'shadow-double') %>
+				</td>
+			</tr>
+
+
+		</table>
+	</div>
+</div>

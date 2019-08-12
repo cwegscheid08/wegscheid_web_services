@@ -400,7 +400,6 @@ body {
 	font-weight: 300;
 	text-align: center;
 	font-size: 22px;
-	border-radius: 5px;
 	//background-color: rgba(0, 0, 0, 0.6);
 	min-width: 200px;
 	z-index: 2;
@@ -422,7 +421,6 @@ body {
 	text-align: center;
 	font-size: 16px;
 	font-weight: 300;
-	border-radius: 5px;
 	ul {
 		list-style: none;
 	}
@@ -601,6 +599,50 @@ body {
 }
 
 
+/* PORTFOLIO */
+
+.portfolio {
+	margin: 10% 0px 10% 0px;
+	grid-area: content;
+	z-index: 1;
+	justify-self: center;
+	background-color: rgba(255, 255, 255, 0.3);
+	padding: 5%;
+	border-radius: 5px;
+}
+
+.site-list {
+	//border: 1px solid black;
+	//width: 25%;
+	text-align: center;
+	font-size: 20px;
+	a {
+		color: #18539A;
+		font-weight: 700;
+	}
+}
+
+.portfolio-title {
+	grid-area: content;
+	text-align: center;
+	//background-color: rgba(255, 255, 255, 0.3);
+	z-index: 1;
+}
+
+.portfolio-background {
+	grid-area: content;
+	position: fixed;
+	margin: 10% 25% 0px 25%;
+	//margin-left: 25%;
+	//margin-right: 25%;
+	z-index: 1;
+	filter: blur(14px);
+}
+
+
+
+
+
 /* DROP DOWN MENU */
 
 
@@ -634,7 +676,7 @@ body {
   max-width: 160px;
   margin: -1px 0px 0px -53px;
   text-align: end;
-  min-height: 220px;
+  min-height: 260px;
   border-radius: 5px 0px 5px 5px;
 }
 
@@ -709,6 +751,27 @@ body {
 .shadow-double {
 	box-shadow: 0px 16px 32px 0px rgba(0,0,0,0.8);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

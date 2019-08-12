@@ -21,4 +21,7 @@ class StaticPagesController < ApplicationController
 
 	def news
 	end
+
+	def portfolio
+	end
 end

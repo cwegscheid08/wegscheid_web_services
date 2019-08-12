@@ -8,39 +8,42 @@
   </p>
 </div>
 
-<div class="dropdown blur" onclick="void(0)">
-  <div class="dropbtn">
-  	<div class="menu_icon">
-  		<div class="one animated fadeInDown"></div>
-  		<div class="two animated fadeInDown"></div>
-  		<div class="three animated fadeInDown"></div>
-  	</div>
-  </div>
+<%  %>
 
-  <div class="dropdown-content animated fadeInDown blur">
-    <a href="/">Home</a>
-    <a href="/about">About</a>
-
-    <div class="services_tab">
-      <div class="services_btn">
-        <a href="">&#9001;&#8195; Services</a>
-      </div>
-    
-      <div class="services_dropdown animated fadeInRight blur">
-        <a href="/services">Build New Site</a>
-        <a href="/maintenance">Maintain Current Site</a>
-      </div>
+  <div class="dropdown blur" onclick="void(0)">
+    <div class="dropbtn">
+    	<div class="menu_icon">
+    		<div class="one animated fadeInDown"></div>
+    		<div class="two animated fadeInDown"></div>
+    		<div class="three animated fadeInDown"></div>
+    	</div>
     </div>
 
-    <a href="/news">News</a>
-    <a href="/contact">Contact</a>
+    <div class="dropdown-content animated fadeInDown blur">
+      <a href="/">Home</a>
+      <a href="/about">About</a>
 
-    <!-- <% if logged_in? %>
-      <%= link_to "My account", current_member, method: :get %>
-      <%= link_to "Log out", logout_path, method: :delete %>
-    <% else %>
-      <a href="/login">Log In</a>
-    <% end %> -->
+      <div class="services_tab">
+        <div class="services_btn">
+          <a href="">&#9001;&#8195; Services</a>
+        </div>
+      
+        <div class="services_dropdown animated fadeInRight blur">
+          <a href="/services">Build New Site</a>
+          <a href="/maintenance">Maintain Current Site</a>
+        </div>
+      </div>
 
+      <a href="/news">News</a>
+      <a href="/portfolio">Portfolio</a>
+      <a href="/contact">Contact</a>
+
+      <!-- <% if logged_in? %>
+        <%= link_to "My account", current_member, method: :get %>
+        <%= link_to "Log out", logout_path, method: :delete %>
+      <% else %>
+        <a href="/login">Log In</a>
+      <% end %> -->
+
+    </div>
   </div>
-</div>
