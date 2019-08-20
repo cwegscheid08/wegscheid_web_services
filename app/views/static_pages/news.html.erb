@@ -4,9 +4,11 @@
 
 <% provide(:page, 'news') %>
 
-<video playsinline autoplay muted id="background_video" class="animated fadeIn">
-	<source src="/videos/news_clip.mp4" type="video/mp4">
-</video>
+
+
+<div class="background_image">
+	<%= image_tag('fire-timelapse.jpg') %>
+</div>
 
 
 
@@ -16,13 +18,18 @@
 
 
 
-
-
+<div class="heading">
+	<h2>Checkout our Newsletter</h2>
+</div>
 
 
 
 <div class="newsletter">
 	<!-- Images used to open the lightbox -->
+	<div class="info">
+		<p>Click through some of the informtion about us.</p>
+	</div>
+
 	<div class="row shadow-double">
 	  <div class="column">
 	  	<%= image_tag('thumbnails/august_newsletter_thumb_pg_1.jpg', onclick: 'openModal();currentSlide(1)', class: 'hover-shadow') %>
