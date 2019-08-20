@@ -4,7 +4,12 @@
 
 <% provide(:page, 'portfolio') %>
 
-<div class="portfolio-background"><%= image_tag('blue_letter_1.png') %></div>
+<div class="background_image blur">
+	<%= image_tag('fireworks-timelapse.jpg') %>
+</div>
+
+
+<!-- <div class="portfolio-background"><%= image_tag('blue_letter_1.png') %></div> -->
 
 
 <div class="portfolio-title">
@@ -17,16 +22,22 @@
 
 <div class="portfolio shadow-double">
 
+
+	<div class="port_background_image blur">
+		<%= image_tag('fireworks-timelapse.jpg') %>
+	</div>
+
+
 	<div class="site-list">
 		<table>
 
 
 			<tr>
 				<td>
-					<%= image_tag('lori_shula_therapist.png', size: '600x350', alt: 'lori shula therapist site', class: 'shadow-double') %>
+					<a href="https://lorishulatherapist.com"><%= image_tag('lori_shula_therapist.png', size: '600x350', alt: 'lori shula therapist site', class: 'shadow-double') %></a>
 				</td>
 				<td>
-					<h3>Lori Shula Therapist</h3>
+					<p>Lori Shula Therapist</p>
 					<a href="https://lorishulatherapist.com">Click Here</a>
 				</td>
 			</tr>
@@ -38,11 +49,11 @@
 
 			<tr>
 				<td>
-					<h3>Living Word Christian School</h3>
-					<a href="http://lwcsnfm.org/">Click Here</a>
+					<p>Living Word Christian School</p>
+					<a href="https://lwcsnfm.org/">Click Here</a>
 				</td>
 				<td>
-					<%= image_tag('living_word_christian_school_screenshot.png', size: '600x350', alt: 'living word christian school site', class: 'shadow-double') %>
+					<a href="https://lwcsnfm.org/"><%= image_tag('living_word_christian_school_screenshot.png', size: '600x350', alt: 'living word christian school site', class: 'shadow-double') %></a>
 				</td>
 			</tr>
 
