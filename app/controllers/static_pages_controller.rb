@@ -14,6 +14,7 @@ class StaticPagesController < ApplicationController
 	end
 
 	def maintenance
+		
 	end
 
 	def sample_gym
