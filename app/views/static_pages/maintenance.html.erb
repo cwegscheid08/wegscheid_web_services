@@ -4,9 +4,13 @@
 
 <% provide(:page, 'maintenance') %>
 
-<video playsinline autoplay muted id="background_video" class="animated fadeInUp">
+<!-- <video playsinline autoplay muted id="background_video" class="animated fadeInUp">
 	<source src="/videos/bloom_2.mp4" type="video/mp4">
-</video>
+</video> -->
+
+<div class="smaller_background_image">
+	<%= image_tag('full_sized_fire_timelapse.jpg') %>
+</div>
 
 <div class="maintenance">
 
@@ -17,7 +21,7 @@
 	</div>
 
 	<div class="maintenance_form animated fadeIn">
-		<form>
+		<form method="post">
 			<input type="text" name="business_name" placeholder="Business Name" class="text-box"><br><br>
 			<input type="text" name="url" placeholder="URL" class="text-box"><br><br>
 			<input type="text" name="email" placeholder="Email" class="text-box"><br><br>
@@ -30,7 +34,7 @@
 
 </div>
 
-<div class="maintenance_sites">
+<div class="maintenance_sites animated fadeIn">
 	<div>
 		<p>Check out some of the sites that we maintain <span class="caret"><!-- &#9653; --></span></p>
 	</div>

@@ -66,9 +66,11 @@ Rails.application.configure do
 
 
   ActionMailer::Base.smtp_settings = {
-    :user_name => ENV['SENDGRID_USERNAME'],
-    :password => ENV['SENDGRID_PASSWORD'],
-    :domain => 'wegscheidwebservices.com',
+    # :user_name => ENV['SENDGRID_USERNAME'],
+    # :password => ENV['SENDGRID_PASSWORD'],
+    :user_name => 'wegscheidwebservices',
+    :password => 'juqdad-Nufhoh-cezwo6',
+    :domain => 'ASPMX.L.GOOGLE.COM',
     :address => 'smtp.sendgrid.net',
     :port => 587,
     :authentication => :plain,

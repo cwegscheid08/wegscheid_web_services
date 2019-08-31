@@ -14,7 +14,7 @@ class StaticPagesController < ApplicationController
 	end
 
 	def maintenance
-		
+		# StaticPagesMailer.with(params).maintenance_email.deliver_now
 	end
 
 	def sample_gym

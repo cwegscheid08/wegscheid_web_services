@@ -21,4 +21,21 @@ class StaticPagesMailer < ApplicationMailer
 
     mail to: "to@example.org"
   end
+
+
+  def maintenance_email
+    @business_name = params[:business_name]
+    @url = params[:url]
+    @email = params[:email]
+    @phone_number = params[:phone_number]
+
+    mail(to: @email, subject: 'Maintenance Lead')
+  end
+
+
+
 end
+
+
+
+
