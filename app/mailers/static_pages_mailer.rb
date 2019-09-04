@@ -28,8 +28,10 @@ class StaticPagesMailer < ApplicationMailer
     @url = params[:url]
     @email = params[:email]
     @phone_number = params[:phone_number]
+    @destination = 'chris.wegscheid@wegscheidwebservices.com'
 
-    mail(to: @email, subject: 'Maintenance Lead')
+
+    mail(to: @destination, from: @email, subject: 'Maintenance Lead')
   end
 
 
