@@ -12,3 +12,10 @@ Member.create!(	name: 	"Example Member",
 					password: 				password,
 					password_confirmation: 	password)
 end
+
+Member.create!(	name: ENV['ADMIN_USERNAME'],
+				email: 'chris@wegscheidwebservices.com',
+				phone_number: '(863)-673-6419',
+				url: 'wegscheidwebservices.com',
+				business_name: 'Wegscheid Web Services',
+				password: ENV['ADMIN_PASSWORD'])
