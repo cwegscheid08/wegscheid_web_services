@@ -1021,7 +1021,7 @@ h2 {
 
 .port_background_image {
 	position: absolute;
-	z-index: -2;
+	//z-index: -2;
 	//bottom: 0;
 	//right: 0;
 	min-width: 100%;
@@ -1040,6 +1040,9 @@ h2 {
 		color: #18539A;
 		font-weight: 700;
 	}
+	td {
+		z-index: 3;
+	}
 }
 
 .portfolio-title {
@@ -1051,7 +1054,7 @@ h2 {
 	margin: -35px 150px 0px 0px;
 	padding: 30px 0px 20px 0px;
 	//background-color: rgba(255, 255, 255, 0.3);
-	z-index: 2;
+	z-index: 1;
 	h1 {
 		font-weight: 800;
 	}
