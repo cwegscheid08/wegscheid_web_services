@@ -40,7 +40,7 @@ h2 {
 	position: absolute;
 
 	//WHITE
-	background-color: rgba(201, 201, 201, 0.7);
+	background-color: rgba(201, 201, 201, 0.9);
 
 	//LIGHT BLUE
 	//background-color: rgba(15,142,253,0.35);
@@ -1072,6 +1072,73 @@ h2 {
 
 
 
+/* LOG CABIN PAGE */
+
+.log-cabin-container {
+	font-family: sans-serif;
+	min-width: 100%;
+	min-height: 100%;
+	display: grid;
+	overflow: hidden;
+	grid-template-areas:
+		"nav nav nav"
+		"middle1 middle2 middle3"
+		"bottom bottom bottom";
+	grid-auto-columns: 1fr 1fr 1fr;
+	grid-auto-rows: 100px 1fr 75px;
+	overflow: hidden;
+}
+
+.log-cabin-logo {
+	padding: 10px;
+}
+
+.log-cabin-background {
+	grid-area: middle2;
+	//overflow: hidden;
+	img {
+		//overflow: hidden;
+		position: fixed;
+		width: 100%;
+		min-height: 100%;
+		right: 0;
+		bottom: 0;
+		filter: blur(4px) brightness(80%);
+		z-index: -1;
+	}
+}
+
+.log-cabin-nav-bar {
+	grid-area: nav;
+	//position: fixed;
+	background-color: rgba(0, 0, 0, 0.75);
+	z-index: 1;
+	width: 100%;
+	border-right: 1300px solid transparent;
+	border-bottom: 100px solid rgba(100, 0, 0, 0.5);
+	table {
+		right: 0;
+		a {
+			color: white;
+		}
+	}
+}
+
+.log-cabin-content {
+	grid-area: middle2;
+	justify-self: center;
+	align-self: center;
+	z-index: 2;
+	height: 800px;
+}
+
+.log-cabin-footer {
+	grid-area: bottom;
+	background-color: rgba(100, 0, 0, 0.85);
+	z-index: 1;	
+}
+
+
 
 
 
@@ -1358,7 +1425,6 @@ img.hover-shadow {
 
 
 .dropbtn {
-  background-color: rgba(0, 0, 255, 0);
   color: white;
   padding: 16px;
   font-size: 16px;
@@ -1371,7 +1437,6 @@ img.hover-shadow {
   justify-self: center;
   z-index: 3;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
-  //background-color: rgba(0, 0, 0, 0.6);
   max-height: 70px;
   max-width: 67px;
   border-radius: 0px 0px 5px 5px;
@@ -1396,21 +1461,22 @@ img.hover-shadow {
 	padding: 12px 16px;
 	text-decoration: none;
 	display: block;
-	color: white;
+	color: black;
 }
 
 .dropdown-content a:hover {
-	background-color: rgba(255, 255, 255, 0.6);
+	background-color: rgba(0, 0, 0, 0.85);
 	color: white;	
 }
 
 .dropdown:hover .dropdown-content {display: block;}
 
-.dropdown:hover .dropbtn {background-color: rgba(255, 255, 255, 0.6);}
+.dropdown:hover .dropbtn {
+	background-color: rgba(255, 255, 255, 0);
+}
 
 .services_tab .services_dropdown {
 	display: none;
-	//background-color: rgba(0, 0, 0, 0.6);
 	min-width: 165px;
 	color: white;
 	margin: -44px 0px 0px -165px;
@@ -1422,11 +1488,10 @@ img.hover-shadow {
 
 .services_tab:hover .services_dropdown {
 	display: block;
-	//background-color: rgba(0, 0, 0, 0.6);
 }
 
 .services_dropdown a:hover {
-	background-color: rgba(255, 255, 255, 0.6);
+	background-color: rgba(0, 0, 0, 0.85);
 	color: white;
 }
 
@@ -1449,6 +1514,13 @@ img.hover-shadow {
 	.three {
 		animation-delay: 1.5s;
 		animation-duration: 3s;
+	}
+}
+
+.dropdown:hover {
+	border-radius: 0px 0px 0px 0px;
+	.menu_icon div {
+		background-color: black;
 	}
 }
 

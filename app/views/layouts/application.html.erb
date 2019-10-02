@@ -18,13 +18,19 @@
   </head>
 
   <body>
-    <div id="container" class="container">
-      <%= yield %>
-      <%= render 'layouts/header' %>
+    <% if yield(:title) != 'Log Cabin' %>
+      <div id="container" class="container">
+        <%= yield %>
+        
+        <%= render 'layouts/header' %>
 
-<!--       <%= debug(params) if Rails.env.development? %> -->
-    <%= render 'layouts/footer' %>
-    </div>
-
+  <!--       <%= debug(params) if Rails.env.development? %> -->
+        <%= render 'layouts/footer' %>
+      </div>
+    <% else %>
+      <div id="sample_container">
+        <%= yield %>
+      </div>  
+    <% end %>
   </body>
 </html>

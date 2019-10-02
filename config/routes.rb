@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   get '/services', to: 'static_pages#services'
   get '/contact', to: 'static_pages#contact'
   get '/maintenance', to: 'static_pages#maintenance'
-  get '/sample_gym', to: 'static_pages#sample_gym'
+  get '/log_cabin', to: 'static_pages#log_cabin'
   get '/news', to: 'static_pages#news'
   get '/portfolio', to: 'static_pages#portfolio'
   resources :members
