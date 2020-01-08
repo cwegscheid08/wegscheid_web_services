@@ -914,6 +914,16 @@ h2 {
 	position: relative;
 	color: white;
 	grid-area: content;
+	z-index: 2;
+	display: inline-block;
+	align-self: center;
+	justify-self: center;
+}
+
+/* .services_info {
+	position: relative;
+	color: white;
+	grid-area: content;
 	display: inline-block;
 	// margin: 0px 8% 0px 0px;
 	width: 170px;
@@ -930,7 +940,7 @@ h2 {
 		width: 144px;
 		margin-left: 14px;
 	}
-}
+} */
 
 .services_info_background {
 	grid-area: content;
@@ -1357,6 +1367,41 @@ img.hover-shadow {
 
 
 
+
+
+
+
+/*CONSTRUCTION PAGE*/
+
+.construction_fill {
+	z-index: 3;
+	grid-area: content;
+	text-align: center;
+	padding-top: 25%;
+	justify-content: center;
+	p {
+		font-family: 'Raleway';
+		color: white;
+		font-size: 75px;		
+		font-weight: 100;
+	}
+	h6 {
+		font-family: 'Raleway';
+		font-size: 16px;
+		color: white;
+		font-weight: 100;
+	}
+}
+
+#construction_video {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+	z-index: -1;
+}
 
 
 
