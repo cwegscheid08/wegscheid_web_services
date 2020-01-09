@@ -1379,6 +1379,8 @@ img.hover-shadow {
 	text-align: center;
 	padding-top: 25%;
 	justify-content: center;
+	animation-delay: 2s;
+	animation-duration: 2s;
 	p {
 		font-family: 'Raleway';
 		color: white;
@@ -1847,6 +1849,17 @@ img.hover-shadow {
 
 	.filter {
 		z-index: 0;
+	}
+
+	.construction_fill {
+		padding-top: 50%;
+		p {
+			font-size: 40px;
+			font-weight: 600;
+		}
+		h6 {
+			font-weight: 600;
+		}
 	}
 }
 
